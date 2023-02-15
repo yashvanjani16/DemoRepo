@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>profile</title>
+  <link rel="stylesheet" type="text/css" href="vv/d.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Yash Vanjani</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Personal Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ts">Technical Summary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#edu">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div>
+    <div id="home" class="bg">
+      <video src="vv/video.mp4" autoplay muted loop class="bgv"></video>
+      <div class="container d-flex align-items-center justify-content-center text-center h-100">
+        <div id="ann">
+        <div class="tw">
+          <h1>Hi,myself yash vanjani</h1>
+          <hr>
+          <h5>I am a frontend developer</h5>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ts">
+    <div class="container">
+      <div class="row">
+    <div class="col-md-offset-1 col-md-10 " style="margin: auto;">
+    <h1><i class="fa fa-gears"></i>Technical Summary</h1><hr>
+    <ul>
+      <h3>Soft Skills</h3>
+      <li>I can work well in Team.</li>
+      <li>Communication Skills</li><br><br>
+      <h3>Technical Skills</h3>
+      <li>Strong fundamentals of Html and Css</li>
+      <li>Basic knowledge of Javascript and Mysql</li>
+    </ul>
+  </div>
+</div>
+</div>
+  </div>
+
+  <div id="edu">
+<h1>Education Qualification</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Course</th>
+      <th scope="col">Year</th>
+      <th scope="col">University</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Diploma in CSE</th>
+      <td>2017-2020</td>
+      <td>Parul University(GTU)</td>
+    </tr>
+
+    <tr class="table-primary">
+      <th scope="row">B-TECH in CSE</th>
+      <td>2020-2023</td>
+      <td>Parul University</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+ <div id="form">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4" style="margin:auto;"
+            id="CNAForm">
+            <h3 class="text-center"><i class="fa fa-users"></i> Create New Account
+                <hr />
+            </h3>
+            <div class="form-group">
+                <b>Firstname:</b>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" id="TxtFirstname" placeholder="Enter firstname here.." maxlength="20"
+                        class="form-control" />
+                </div>
+                <small class="text-danger" id="TxtFirstnameValidate"></small>
+            </div>
+            <div class="form-group">
+                <b>Lastname:</b>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" id="TxtLastname" placeholder="Enter lastname here.." maxlength="20"
+                        class="form-control" />
+                </div>
+                <small class="text-danger" id="TxtLastnameValidate"></small>
+            </div>
+            <div class="form-group">
+                <b>Email Id:</b>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input type="text" id="TxtEmailid" placeholder="Enter email id here.." maxlength="50"
+                        class="form-control" />
+                </div>
+                <small class="text-danger" id="TxtEmailidValidate"></small>
+            </div>
+            <div class="form-group">
+                <b><i class="fa fa-phone"></i> Contact No.:</b>
+                <div class="input-group">
+                    <span class="input-group-addon">+91</span>
+                    <input type="text" id="TxtContactNo" placeholder="Enter contact no. here.." maxlength="10"
+                        class="form-control" />
+                </div>
+                <small class="text-danger" id="TxtContactNoValidate"></small>
+            </div>
+            <div class="form-group">
+                <b>Gender:</b>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-male"></i> | <i class="fa fa-female"></i>
+                    </span>
+                    <select id="DDL_Gender" class="form-control">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <a class="btn btn-primary" id="BtnCreateNewAccount"><i style="color:white;"
+                        class="fa fa-user-plus"></i> Submit</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ 
+  <!-- <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Yash Vanjani</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#pi">Personal Information</a></li>
+        <li><a href="#ts">Technical Summary</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Interests</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="pi" class="bg">
+    <video src="vv/video.mp4" autoplay loop muted class="bgv"></video>
+    <div class="row" id="HomeRow">
+         <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-lg-6 col-md-6 col-sm-8 col-xs-12 wow slideInDown" data-wow-duration="3s">
+              <center><img class="my-image" src="vv/MicrosoftTeams-image.png" alt="my pic" height="300px" /></center>
+              <center><h2>Yash Vanjani</h2></center>
+              <center><h5>Frontend Developer</h5><hr /></center>
+              <div class="row">
+                  <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5">
+                       <center><i class="fa fa-2x fa-phone"></i>9106737712</center>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-6">
+                       <center><i class="fa fa-2x fa-envelope"></i> <a href="mailto:yash.vanjani16@gmail.com" style="color:#ffffff;">yash.vanjani16@gmail.com</a></center>
+                  </div>
+              </div><hr />
+              <div class="row">
+                  <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                       <center><i class="fa fa-2x fa-map-marker"></i>13,yamuna nagar harni warasiya ring road,vadodara</center>
+                  </div>
+              </div><hr />
+              <center><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;<a href="#"><i class="fa fa-2x fa-twitter-square"></i></a> &nbsp;<a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a> &nbsp;<a href="#"><i class="fa fa-2x fa-instagram"></i></a></center>
+         </div>
+    </div>
+</div> -->
+
+
+  <!-- <div class="container mt-content">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 centered-box">
+        <div class="my-photo text-center">
+
+          <img src="vv/MicrosoftTeams-image.png" alt="my picture" />
+        </div>
+
+        <table class="table">
+          <tbody>
+            <tr>
+              <td colspan="3">
+                <div class="me">Myself yash vanjani</div>
+                <p>
+                  Frontend Developer <br>
+                  UI DESIGNER
+                </p>
+              </td>
+            </tr> -->
+
+</body>
+
+</html>
